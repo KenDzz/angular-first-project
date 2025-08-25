@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="login.welcomeBack" datatype="html">
+        <source>Welcome Back</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/auth/login/login.html</context>
+          <context context-type="linenumber">9,10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="login.signInMessage" datatype="html">
+        <source>Sign in to your account to continue</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/auth/login/login.html</context>
+          <context context-type="linenumber">10,13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="login.emailLabel" datatype="html">
+        <source>Email Address</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/auth/login/login.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="login.emailPlaceholder" datatype="html">
+        <source>Enter your email</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/auth/login/login.html</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="login.passwordLabel" datatype="html">
+        <source>Password</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/auth/login/login.html</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="login.passwordPlaceholder" datatype="html">
+        <source>Enter your password</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/auth/login/login.html</context>
+          <context context-type="linenumber">33</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="login.signingIn" datatype="html">
+        <source>Signing in...</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/auth/login/login.html</context>
+          <context context-type="linenumber">48,50</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="login.signInButton" datatype="html">
+        <source>Sign In</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/auth/login/login.html</context>
+          <context context-type="linenumber">50,52</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="login.noAccount" datatype="html">
+        <source>Don&apos;t have an account?</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/auth/login/login.html</context>
+          <context context-type="linenumber">58,59</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="login.createAccount" datatype="html">
+        <source>Create one here</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/auth/login/login.html</context>
+          <context context-type="linenumber">59,62</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="register.createAccount" datatype="html">
+        <source>Create Account</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/auth/register/register.html</context>
+          <context context-type="linenumber">9,10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="register.signUpMessage" datatype="html">
+        <source>Sign up to get started with your account</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/auth/register/register.html</context>
+          <context context-type="linenumber">10,13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="register.firstNameLabel" datatype="html">
+        <source>First Name</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/auth/register/register.html</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="register.firstNamePlaceholder" datatype="html">
+        <source>Enter your first name</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/auth/register/register.html</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="register.lastNameLabel" datatype="html">
+        <source>Last Name</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/auth/register/register.html</context>
+          <context context-type="linenumber">32</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="register.lastNamePlaceholder" datatype="html">
+        <source>Enter your last name</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/auth/register/register.html</context>
+          <context context-type="linenumber">34</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="register.emailLabel" datatype="html">
+        <source>Email Address</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/auth/register/register.html</context>
+          <context context-type="linenumber">42</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="register.emailPlaceholder" datatype="html">
+        <source>Enter your email</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/auth/register/register.html</context>
+          <context context-type="linenumber">44</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="register.passwordLabel" datatype="html">
+        <source>Password</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/auth/register/register.html</context>
+          <context context-type="linenumber">51</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="register.passwordPlaceholder" datatype="html">
+        <source>Create a strong password</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/auth/register/register.html</context>
+          <context context-type="linenumber">53</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="register.confirmPasswordLabel" datatype="html">
+        <source>Confirm Password</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/auth/register/register.html</context>
+          <context context-type="linenumber">60</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="register.confirmPasswordPlaceholder" datatype="html">
+        <source>Confirm your password</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/auth/register/register.html</context>
+          <context context-type="linenumber">62</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="register.passwordRequirements" datatype="html">
+        <source>Password Requirements:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/auth/register/register.html</context>
+          <context context-type="linenumber">69,70</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="register.requirement1" datatype="html">
+        <source>At least 8 characters long</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/auth/register/register.html</context>
+          <context context-type="linenumber">71,72</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="register.requirement2" datatype="html">
+        <source>Contains uppercase and lowercase letters</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/auth/register/register.html</context>
+          <context context-type="linenumber">72,73</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="register.requirement3" datatype="html">
+        <source>Contains at least one number</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/auth/register/register.html</context>
+          <context context-type="linenumber">73,74</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="register.requirement4" datatype="html">
+        <source>Contains at least one special character</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/auth/register/register.html</context>
+          <context context-type="linenumber">74,77</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="register.creatingAccount" datatype="html">
+        <source>Creating Account...</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/auth/register/register.html</context>
+          <context context-type="linenumber">87,89</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="register.createAccountButton" datatype="html">
+        <source>Create Account</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/auth/register/register.html</context>
+          <context context-type="linenumber">89,91</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="register.alreadyHaveAccount" datatype="html">
+        <source>Already have an account?</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/auth/register/register.html</context>
+          <context context-type="linenumber">97,98</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="register.signInHere" datatype="html">
+        <source>Sign in here</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/auth/register/register.html</context>
+          <context context-type="linenumber">98,101</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="dashboard.title" datatype="html">
+        <source>Dashboard</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/dashboard/dashboard.html</context>
+          <context context-type="linenumber">4,5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="dashboard.welcomeBack" datatype="html">
+        <source>Welcome back, <x id="INTERPOLATION" equiv-text="{{ currentUser.firstName }}"/>!</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/dashboard/dashboard.html</context>
+          <context context-type="linenumber">9,10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="dashboard.signOut" datatype="html">
+        <source>Sign Out</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/dashboard/dashboard.html</context>
+          <context context-type="linenumber">18,20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="dashboard.welcomeMessage" datatype="html">
+        <source>Welcome to your Dashboard</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/dashboard/dashboard.html</context>
+          <context context-type="linenumber">27,28</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="dashboard.description" datatype="html">
+        <source> You have successfully logged in! This is a protected route that can only be accessed by authenticated users. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/dashboard/dashboard.html</context>
+          <context context-type="linenumber">29,31</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

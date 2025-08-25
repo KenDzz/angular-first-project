@@ -6,10 +6,19 @@ import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 import { AuthService } from '../../../core/services/auth.service';
 import { FormInputComponent } from '../../../shared/components/form-input/form-input';
 import { ButtonComponent } from '../../../shared/components/button/button';
+import { LanguageSwitcherComponent } from '../../../shared/components/language-switcher/language-switcher';
+import { TranslatePipe } from '../../../shared/pipes/translate.pipe';
 
 @Component({
   selector: 'app-login',
-  imports: [ReactiveFormsModule, RouterLink, FormInputComponent, ButtonComponent],
+  imports: [
+    ReactiveFormsModule,
+    RouterLink,
+    FormInputComponent,
+    ButtonComponent,
+    LanguageSwitcherComponent,
+    TranslatePipe,
+  ],
   templateUrl: './login.html',
   styleUrl: './login.css',
   changeDetection: ChangeDetectionStrategy.OnPush,

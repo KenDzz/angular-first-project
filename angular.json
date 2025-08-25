@@ -9,6 +9,23 @@
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
+      "i18n": {
+        "sourceLocale": "en",
+        "locales": {
+          "vi": {
+            "translation": "src/locale/messages.vi.xlf",
+            "subPath": "vi"
+          },
+          "ja": {
+            "translation": "src/locale/messages.ja.xlf",
+            "subPath": "ja"
+          },
+          "fr": {
+            "translation": "src/locale/messages.fr.xlf",
+            "subPath": "fr"
+          }
+        }
+      },
       "architect": {
         "build": {
           "builder": "@angular/build:application",
@@ -50,6 +67,21 @@
               "optimization": false,
               "extractLicenses": false,
               "sourceMap": true
+            },
+            "vi": {
+              "aot": true,
+              "outputPath": "dist/vi/",
+              "localize": ["vi"]
+            },
+            "ja": {
+              "aot": true,
+              "outputPath": "dist/ja/",
+              "localize": ["ja"]
+            },
+            "fr": {
+              "aot": true,
+              "outputPath": "dist/fr/",
+              "localize": ["fr"]
             }
           },
           "defaultConfiguration": "production"
@@ -62,6 +94,15 @@
             },
             "development": {
               "buildTarget": "project-first:build:development"
+            },
+            "vi": {
+              "buildTarget": "project-first:build:vi"
+            },
+            "ja": {
+              "buildTarget": "project-first:build:ja"
+            },
+            "fr": {
+              "buildTarget": "project-first:build:fr"
             }
           },
           "defaultConfiguration": "development"
