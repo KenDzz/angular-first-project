@@ -7,7 +7,16 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve:ssr:project-first": "node dist/project-first/server/server.mjs"
+    "serve:ssr:project-first": "node dist/project-first/server/server.mjs",
+    "extract-i18n": "ng extract-i18n",
+    "build:i18n": "npm run build:en && npm run build:vi && npm run build:ja && npm run build:fr",
+    "build:en": "ng build --localize --base-href /",
+    "build:vi": "ng build --configuration=vi",
+    "build:ja": "ng build --configuration=ja",
+    "build:fr": "ng build --configuration=fr",
+    "serve:vi": "ng serve --configuration=vi",
+    "serve:ja": "ng serve --configuration=ja",
+    "serve:fr": "ng serve --configuration=fr"
   },
   "prettier": {
     "printWidth": 100,
@@ -27,6 +36,7 @@
     "@angular/compiler": "^20.2.0",
     "@angular/core": "^20.2.0",
     "@angular/forms": "^20.2.0",
+    "@angular/localize": "^20.2.1",
     "@angular/platform-browser": "^20.2.0",
     "@angular/platform-server": "^20.2.0",
     "@angular/router": "^20.2.0",

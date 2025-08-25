@@ -1,8 +1,13 @@
 <div class="flex items-center justify-center min-h-screen bg-gradient-to-br from-primary-400 via-primary-500 to-purple-600 p-4">
   <div class="bg-white rounded-2xl shadow-2xl p-12 w-full max-w-xl fade-in">
+    <!-- Language Switcher -->
+    <div class="flex justify-end mb-4">
+      <app-language-switcher />
+    </div>
+
     <div class="text-center mb-8">
-      <h1 class="text-3xl font-bold text-gray-800 mb-2">Create Account</h1>
-      <p class="text-base text-gray-600">Sign up to get started with your account</p>
+      <h1 class="text-3xl font-bold text-gray-800 mb-2">{{ 'auth.register.title' | translate }}</h1>
+      <p class="text-base text-gray-600">{{ 'auth.register.subtitle' | translate }}</p>
     </div>
 
     <form [formGroup]="registerForm" (ngSubmit)="onSubmit()" class="mb-8" novalidate>
@@ -15,18 +20,18 @@
 
       <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
         <app-form-input
-          label="First Name"
+          [label]="'auth.register.first-name' | translate"
           type="text"
-          placeholder="Enter your first name"
+          [placeholder]="'auth.register.first-name-placeholder' | translate"
           [required]="true"
           [error]="getFieldError('firstName')"
           formControlName="firstName"
         />
 
         <app-form-input
-          label="Last Name"
+          [label]="'auth.register.last-name' | translate"
           type="text"
-          placeholder="Enter your last name"
+          [placeholder]="'auth.register.last-name-placeholder' | translate"
           [required]="true"
           [error]="getFieldError('lastName')"
           formControlName="lastName"
@@ -34,39 +39,39 @@
       </div>
 
       <app-form-input
-        label="Email Address"
+        [label]="'auth.email.label' | translate"
         type="email"
-        placeholder="Enter your email"
+        [placeholder]="'auth.email.placeholder' | translate"
         [required]="true"
         [error]="getFieldError('email')"
         formControlName="email"
       />
 
       <app-form-input
-        label="Password"
+        [label]="'auth.password.label' | translate"
         type="password"
-        placeholder="Create a strong password"
+        [placeholder]="'auth.register.password-strong' | translate"
         [required]="true"
         [error]="getFieldError('password')"
         formControlName="password"
       />
 
       <app-form-input
-        label="Confirm Password"
+        [label]="'auth.register.confirm-password' | translate"
         type="password"
-        placeholder="Confirm your password"
+        [placeholder]="'auth.register.confirm-password-placeholder' | translate"
         [required]="true"
         [error]="getFieldError('confirmPassword')"
         formControlName="confirmPassword"
       />
 
       <div class="mb-6 p-4 bg-blue-50 border border-blue-200 rounded-lg">
-        <h4 class="text-sm font-semibold text-blue-800 mb-2">Password Requirements:</h4>
+        <h4 class="text-sm font-semibold text-blue-800 mb-2">{{ 'auth.register.password-requirements' | translate }}</h4>
         <ul class="text-xs text-blue-700 space-y-1 pl-4 list-disc">
-          <li>At least 8 characters long</li>
-          <li>Contains uppercase and lowercase letters</li>
-          <li>Contains at least one number</li>
-          <li>Contains at least one special character</li>
+          <li>{{ 'auth.register.requirement1' | translate }}</li>
+          <li>{{ 'auth.register.requirement2' | translate }}</li>
+          <li>{{ 'auth.register.requirement3' | translate }}</li>
+          <li>{{ 'auth.register.requirement4' | translate }}</li>
         </ul>
       </div>
 
@@ -79,9 +84,9 @@
           [loading]="isLoading()"
         >
           @if (isLoading()) {
-            Creating Account...
+            <span>{{ 'auth.register.creating' | translate }}</span>
           } @else {
-            Create Account
+            <span>{{ 'auth.register.create-button' | translate }}</span>
           }
         </app-button>
       </div>
@@ -89,8 +94,8 @@
 
     <div class="text-center border-t border-gray-200 pt-6">
       <p class="text-sm text-gray-600">
-        Already have an account?
-        <a routerLink="/login" class="text-primary-500 no-underline font-semibold transition-colors duration-200 hover:text-primary-600 hover:underline">Sign in here</a>
+        <span>{{ 'auth.register.already-have' | translate }}</span>
+        <a routerLink="/login" class="text-primary-500 no-underline font-semibold transition-colors duration-200 hover:text-primary-600 hover:underline">{{ 'auth.register.sign-in-here' | translate }}</a>
       </p>
     </div>
   </div>

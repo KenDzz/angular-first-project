@@ -1,8 +1,13 @@
 <div class="flex items-center justify-center min-h-screen bg-gradient-to-br from-primary-400 via-primary-500 to-purple-600 p-4">
   <div class="bg-white rounded-2xl shadow-2xl p-12 w-full max-w-md fade-in">
+    <!-- Language Switcher -->
+    <div class="flex justify-end mb-4">
+      <app-language-switcher />
+    </div>
+
     <div class="text-center mb-8">
-      <h1 class="text-3xl font-bold text-gray-800 mb-2">Welcome Back</h1>
-      <p class="text-base text-gray-600">Sign in to your account to continue</p>
+      <h1 class="text-3xl font-bold text-gray-800 mb-2">{{ 'auth.login.welcome' | translate }}</h1>
+      <p class="text-base text-gray-600">{{ 'auth.login.subtitle' | translate }}</p>
     </div>
 
     <form [formGroup]="loginForm" (ngSubmit)="onSubmit()" class="mb-8" novalidate>
@@ -14,18 +19,18 @@
       }
 
       <app-form-input
-        label="Email Address"
+        [label]="'auth.email.label' | translate"
         type="email"
-        placeholder="Enter your email"
+        [placeholder]="'auth.email.placeholder' | translate"
         [required]="true"
         [error]="getFieldError('email')"
         formControlName="email"
       />
 
       <app-form-input
-        label="Password"
+        [label]="'auth.password.label' | translate"
         type="password"
-        placeholder="Enter your password"
+        [placeholder]="'auth.password.placeholder' | translate"
         [required]="true"
         [error]="getFieldError('password')"
         formControlName="password"
@@ -40,9 +45,9 @@
           [loading]="isLoading()"
         >
           @if (isLoading()) {
-            Signing in...
+            <span>{{ 'auth.login.signing-in' | translate }}</span>
           } @else {
-            Sign In
+            <span>{{ 'auth.login.sign-in' | translate }}</span>
           }
         </app-button>
       </div>
@@ -50,8 +55,8 @@
 
     <div class="text-center border-t border-gray-200 pt-6">
       <p class="text-sm text-gray-600">
-        Don't have an account?
-        <a routerLink="/register" class="text-primary-500 no-underline font-semibold transition-colors duration-200 hover:text-primary-600 hover:underline">Create one here</a>
+        <span>{{ 'auth.login.no-account' | translate }}</span>
+        <a routerLink="/register" class="text-primary-500 no-underline font-semibold transition-colors duration-200 hover:text-primary-600 hover:underline">{{ 'auth.login.create-account' | translate }}</a>
       </p>
     </div>
   </div>

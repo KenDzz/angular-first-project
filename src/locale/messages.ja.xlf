@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en" target-language="ja" datatype="plaintext" original="ng2.template">
+    <body>
+      <!-- Auth Login Messages -->
+      <trans-unit id="auth.login.welcome" datatype="html">
+        <source>Welcome Back</source>
+        <target>お帰りなさい</target>
+        <note priority="1" from="description">Login page welcome title</note>
+      </trans-unit>
+      <trans-unit id="auth.login.subtitle" datatype="html">
+        <source>Sign in to your account to continue</source>
+        <target>アカウントにサインインして続行してください</target>
+        <note priority="1" from="description">Login page subtitle</note>
+      </trans-unit>
+      <trans-unit id="auth.email.label" datatype="html">
+        <source>Email Address</source>
+        <target>メールアドレス</target>
+        <note priority="1" from="description">Email field label</note>
+      </trans-unit>
+      <trans-unit id="auth.email.placeholder" datatype="html">
+        <source>Enter your email</source>
+        <target>メールアドレスを入力してください</target>
+        <note priority="1" from="description">Email field placeholder</note>
+      </trans-unit>
+      <trans-unit id="auth.password.label" datatype="html">
+        <source>Password</source>
+        <target>パスワード</target>
+        <note priority="1" from="description">Password field label</note>
+      </trans-unit>
+      <trans-unit id="auth.password.placeholder" datatype="html">
+        <source>Enter your password</source>
+        <target>パスワードを入力してください</target>
+        <note priority="1" from="description">Password field placeholder</note>
+      </trans-unit>
+      <trans-unit id="auth.login.signing-in" datatype="html">
+        <source>Signing in...</source>
+        <target>サインイン中...</target>
+        <note priority="1" from="description">Login button loading text</note>
+      </trans-unit>
+      <trans-unit id="auth.login.sign-in" datatype="html">
+        <source>Sign In</source>
+        <target>サインイン</target>
+        <note priority="1" from="description">Login button text</note>
+      </trans-unit>
+      <trans-unit id="auth.login.no-account" datatype="html">
+        <source>Don't have an account?</source>
+        <target>アカウントをお持ちでない場合は？</target>
+        <note priority="1" from="description">Link to register page text</note>
+      </trans-unit>
+      <trans-unit id="auth.login.create-account" datatype="html">
+        <source>Create one here</source>
+        <target>こちらで作成してください</target>
+        <note priority="1" from="description">Link to register page</note>
+      </trans-unit>
+
+      <!-- Auth Register Messages -->
+      <trans-unit id="auth.register.title" datatype="html">
+        <source>Create Account</source>
+        <target>アカウント作成</target>
+        <note priority="1" from="description">Register page title</note>
+      </trans-unit>
+      <trans-unit id="auth.register.subtitle" datatype="html">
+        <source>Sign up to get started with your account</source>
+        <target>アカウントを作成して始めましょう</target>
+        <note priority="1" from="description">Register page subtitle</note>
+      </trans-unit>
+
+      <!-- Dashboard Messages -->
+      <trans-unit id="dashboard.title" datatype="html">
+        <source>Dashboard</source>
+        <target>ダッシュボード</target>
+        <note priority="1" from="description">Dashboard page title</note>
+      </trans-unit>
+      <trans-unit id="dashboard.welcome" datatype="html">
+        <source>Welcome back, {firstName}!</source>
+        <target>お帰りなさい、{firstName}さん！</target>
+        <note priority="1" from="description">Dashboard welcome message</note>
+      </trans-unit>
+      <trans-unit id="dashboard.sign-out" datatype="html">
+        <source>Sign Out</source>
+        <target>サインアウト</target>
+        <note priority="1" from="description">Sign out button text</note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

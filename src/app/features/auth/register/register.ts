@@ -7,10 +7,19 @@ import { AuthService } from '../../../core/services/auth.service';
 import { AuthValidators } from '../../../core/validators/auth.validators';
 import { FormInputComponent } from '../../../shared/components/form-input/form-input';
 import { ButtonComponent } from '../../../shared/components/button/button';
+import { LanguageSwitcherComponent } from '../../../shared/components/language-switcher/language-switcher';
+import { TranslatePipe } from '../../../shared/pipes/translate.pipe';
 
 @Component({
   selector: 'app-register',
-  imports: [ReactiveFormsModule, RouterLink, FormInputComponent, ButtonComponent],
+  imports: [
+    ReactiveFormsModule,
+    RouterLink,
+    FormInputComponent,
+    ButtonComponent,
+    LanguageSwitcherComponent,
+    TranslatePipe,
+  ],
   templateUrl: './register.html',
   styleUrl: './register.css',
   changeDetection: ChangeDetectionStrategy.OnPush,
