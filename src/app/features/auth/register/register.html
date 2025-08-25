@@ -1,0 +1,97 @@
+<div class="flex items-center justify-center min-h-screen bg-gradient-to-br from-primary-400 via-primary-500 to-purple-600 p-4">
+  <div class="bg-white rounded-2xl shadow-2xl p-12 w-full max-w-xl fade-in">
+    <div class="text-center mb-8">
+      <h1 class="text-3xl font-bold text-gray-800 mb-2">Create Account</h1>
+      <p class="text-base text-gray-600">Sign up to get started with your account</p>
+    </div>
+
+    <form [formGroup]="registerForm" (ngSubmit)="onSubmit()" class="mb-8" novalidate>
+      @if (authError()) {
+        <div class="flex items-center gap-3 bg-red-50 border border-red-200 rounded-lg p-4 mb-6 text-red-700 text-sm bounce-soft">
+          <span class="text-xl flex-shrink-0">⚠️</span>
+          <span>{{ authError() }}</span>
+        </div>
+      }
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <app-form-input
+          label="First Name"
+          type="text"
+          placeholder="Enter your first name"
+          [required]="true"
+          [error]="getFieldError('firstName')"
+          formControlName="firstName"
+        />
+
+        <app-form-input
+          label="Last Name"
+          type="text"
+          placeholder="Enter your last name"
+          [required]="true"
+          [error]="getFieldError('lastName')"
+          formControlName="lastName"
+        />
+      </div>
+
+      <app-form-input
+        label="Email Address"
+        type="email"
+        placeholder="Enter your email"
+        [required]="true"
+        [error]="getFieldError('email')"
+        formControlName="email"
+      />
+
+      <app-form-input
+        label="Password"
+        type="password"
+        placeholder="Create a strong password"
+        [required]="true"
+        [error]="getFieldError('password')"
+        formControlName="password"
+      />
+
+      <app-form-input
+        label="Confirm Password"
+        type="password"
+        placeholder="Confirm your password"
+        [required]="true"
+        [error]="getFieldError('confirmPassword')"
+        formControlName="confirmPassword"
+      />
+
+      <div class="mb-6 p-4 bg-blue-50 border border-blue-200 rounded-lg">
+        <h4 class="text-sm font-semibold text-blue-800 mb-2">Password Requirements:</h4>
+        <ul class="text-xs text-blue-700 space-y-1 pl-4 list-disc">
+          <li>At least 8 characters long</li>
+          <li>Contains uppercase and lowercase letters</li>
+          <li>Contains at least one number</li>
+          <li>Contains at least one special character</li>
+        </ul>
+      </div>
+
+      <div class="mt-8">
+        <app-button
+          type="submit"
+          variant="primary"
+          size="lg"
+          [fullWidth]="true"
+          [loading]="isLoading()"
+        >
+          @if (isLoading()) {
+            Creating Account...
+          } @else {
+            Create Account
+          }
+        </app-button>
+      </div>
+    </form>
+
+    <div class="text-center border-t border-gray-200 pt-6">
+      <p class="text-sm text-gray-600">
+        Already have an account?
+        <a routerLink="/login" class="text-primary-500 no-underline font-semibold transition-colors duration-200 hover:text-primary-600 hover:underline">Sign in here</a>
+      </p>
+    </div>
+  </div>
+</div>

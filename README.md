@@ -1,10 +1,43 @@
-# ProjectFirst
+# Angular Authentication Project
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.2.0.
+A modern Angular application showcasing clean architecture, authentication features, and best practices with standalone components, signals, and reactive forms.
 
-## Development server
+## Features
 
-To start a local development server, run:
+### 🔐 Authentication System
+- **Login** - Secure user authentication with form validation
+- **Register** - User registration with strong password requirements
+- **Protected Routes** - Route guards for authenticated and guest users
+- **Auto Logout** - Token-based authentication with refresh mechanism
+
+### 🏗️ Architecture & Design Patterns
+- **Clean Architecture** - Organized folder structure with core, features, and shared modules
+- **Standalone Components** - Modern Angular approach without NgModules
+- **Signal-Based State** - Reactive state management using Angular signals
+- **Reactive Forms** - Type-safe forms with custom validators
+- **Dependency Injection** - Proper DI patterns with `inject()` function
+
+### 🎨 UI/UX
+- **Responsive Design** - Mobile-first responsive layouts
+- **Custom Components** - Reusable form inputs and buttons
+- **Loading States** - Visual feedback during async operations
+- **Error Handling** - User-friendly error messages and validation
+
+## Getting Started
+
+### Prerequisites
+- Node.js (v18 or higher)
+- npm or yarn
+- Angular CLI
+
+### Installation
+
+1. **Install dependencies**
+   ```bash
+   npm install
+   ```
+
+2. **Start the development server**
 
 ```bash
 ng serve
