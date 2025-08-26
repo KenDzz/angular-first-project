@@ -1,0 +1,107 @@
+<div class="min-h-screen bg-gray-50 py-8">
+  <div class="max-w-6xl mx-auto px-8">
+    <h1 class="text-3xl font-bold text-gray-800 mb-8">{{ 'reports.title' | translate }}</h1>
+
+    <!-- Report Types -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+      <div class="bg-white rounded-2xl p-6 shadow-lg">
+        <div class="text-4xl mb-4">📊</div>
+        <h3 class="text-xl font-bold text-gray-800 mb-2">{{ 'reports.user-analytics' | translate }}</h3>
+        <p class="text-gray-600 mb-4">{{ 'reports.user-analytics-desc' | translate }}</p>
+        <app-button
+          variant="primary"
+          size="sm"
+          [fullWidth]="true"
+          [loading]="isGeneratingReport()"
+          (clickEvent)="onGenerateReport('user-analytics')"
+        >
+          <span>{{ 'reports.generate' | translate }}</span>
+        </app-button>
+      </div>
+
+      <div class="bg-white rounded-2xl p-6 shadow-lg">
+        <div class="text-4xl mb-4">💰</div>
+        <h3 class="text-xl font-bold text-gray-800 mb-2">{{ 'reports.revenue-report' | translate }}</h3>
+        <p class="text-gray-600 mb-4">{{ 'reports.revenue-report-desc' | translate }}</p>
+        <app-button
+          variant="primary"
+          size="sm"
+          [fullWidth]="true"
+          [loading]="isGeneratingReport()"
+          (clickEvent)="onGenerateReport('revenue')"
+        >
+          <span>{{ 'reports.generate' | translate }}</span>
+        </app-button>
+      </div>
+
+      <div class="bg-white rounded-2xl p-6 shadow-lg">
+        <div class="text-4xl mb-4">📈</div>
+        <h3 class="text-xl font-bold text-gray-800 mb-2">{{ 'reports.performance-report' | translate }}</h3>
+        <p class="text-gray-600 mb-4">{{ 'reports.performance-report-desc' | translate }}</p>
+        <app-button
+          variant="primary"
+          size="sm"
+          [fullWidth]="true"
+          [loading]="isGeneratingReport()"
+          (clickEvent)="onGenerateReport('performance')"
+        >
+          <span>{{ 'reports.generate' | translate }}</span>
+        </app-button>
+      </div>
+    </div>
+
+    <!-- Recent Reports -->
+    <div class="bg-white rounded-2xl p-6 shadow-lg">
+      <h2 class="text-2xl font-bold text-gray-800 mb-6">{{ 'reports.recent-reports' | translate }}</h2>
+      <div class="space-y-4">
+        <div class="flex items-center justify-between p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors">
+          <div class="flex items-center gap-4">
+            <div class="text-2xl">📊</div>
+            <div>
+              <h4 class="font-semibold text-gray-800">User Analytics Report - January 2025</h4>
+              <p class="text-sm text-gray-600">Generated on {{ '2025-01-15' | date:'medium' }}</p>
+            </div>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-xs font-medium">Completed</span>
+            <app-button variant="ghost" size="sm">
+              <span>{{ 'reports.download' | translate }}</span>
+            </app-button>
+          </div>
+        </div>
+
+        <div class="flex items-center justify-between p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors">
+          <div class="flex items-center gap-4">
+            <div class="text-2xl">💰</div>
+            <div>
+              <h4 class="font-semibold text-gray-800">Revenue Report - Q4 2024</h4>
+              <p class="text-sm text-gray-600">Generated on {{ '2025-01-10' | date:'medium' }}</p>
+            </div>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-xs font-medium">Completed</span>
+            <app-button variant="ghost" size="sm">
+              <span>{{ 'reports.download' | translate }}</span>
+            </app-button>
+          </div>
+        </div>
+
+        <div class="flex items-center justify-between p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors">
+          <div class="flex items-center gap-4">
+            <div class="text-2xl">📈</div>
+            <div>
+              <h4 class="font-semibold text-gray-800">Performance Report - December 2024</h4>
+              <p class="text-sm text-gray-600">Generated on {{ '2025-01-05' | date:'medium' }}</p>
+            </div>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="px-3 py-1 bg-yellow-100 text-yellow-800 rounded-full text-xs font-medium">Processing</span>
+            <app-button variant="ghost" size="sm" [disabled]="true">
+              <span>{{ 'reports.download' | translate }}</span>
+            </app-button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

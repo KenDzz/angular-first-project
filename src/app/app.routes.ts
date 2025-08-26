@@ -1,5 +1,8 @@
 import { Routes } from '@angular/router';
-import { authGuard, guestGuard } from './core/guards/auth.guard';
+import { authGuard } from './core/auth/guards/auth-guard';
+import { authRoutes } from './core/auth/auth.routes';
+import { userManagementRoutes } from './features/user-management/user-management.routes';
+import { analyticsRoutes } from './features/analytics/analytics.routes';
 
 export const routes: Routes = [
   {
@@ -7,22 +10,16 @@ export const routes: Routes = [
     redirectTo: '/login',
     pathMatch: 'full',
   },
-  {
-    path: 'login',
-    loadComponent: () => import('./features/auth/login/login').then((m) => m.LoginComponent),
-    canActivate: [guestGuard],
-  },
-  {
-    path: 'register',
-    loadComponent: () =>
-      import('./features/auth/register/register').then((m) => m.RegisterComponent),
-    canActivate: [guestGuard],
-  },
-  {
-    path: 'dashboard',
-    loadComponent: () => import('./features/dashboard/dashboard').then((m) => m.DashboardComponent),
-    canActivate: [authGuard],
-  },
+
+  // Auth routes (non-business feature in core)
+  ...authRoutes,
+
+  // User Management routes (business feature)
+  ...userManagementRoutes,
+
+  // Analytics routes (business feature)
+  ...analyticsRoutes,
+
   {
     path: '**',
     redirectTo: '/login',

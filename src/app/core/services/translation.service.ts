@@ -68,6 +68,60 @@ export class TranslationService {
       'dashboard.welcome-message': 'Welcome to your Dashboard',
       'dashboard.description':
         'You have successfully logged in! This is a protected route that can only be accessed by authenticated users.',
+
+      // Profile
+      'profile.member-since': 'Member since',
+      'profile.personal-info': 'Personal Information',
+      'profile.first-name': 'First Name',
+      'profile.last-name': 'Last Name',
+      'profile.email': 'Email',
+      'profile.user-id': 'User ID',
+      'profile.account-actions': 'Account Actions',
+      'profile.edit-profile': 'Edit Profile',
+      'profile.change-password': 'Change Password',
+
+      // Settings
+      'settings.title': 'Settings',
+      'settings.personal-info': 'Personal Information',
+      'settings.first-name': 'First Name',
+      'settings.first-name-placeholder': 'Enter your first name',
+      'settings.last-name': 'Last Name',
+      'settings.last-name-placeholder': 'Enter your last name',
+      'settings.email': 'Email',
+      'settings.email-placeholder': 'Enter your email',
+      'settings.language-preferences': 'Language Preferences',
+      'settings.language': 'Language',
+      'settings.account-actions': 'Account Actions',
+      'settings.change-password': 'Change Password',
+      'settings.export-data': 'Export Data',
+      'settings.delete-account': 'Delete Account',
+      'settings.saving': 'Saving...',
+      'settings.save-changes': 'Save Changes',
+
+      // Analytics
+      'analytics.dashboard.title': 'Analytics Dashboard',
+      'analytics.dashboard.last-updated': 'Last updated',
+      'analytics.dashboard.refresh': 'Refresh',
+      'analytics.dashboard.total-users': 'Total Users',
+      'analytics.dashboard.active-users': 'Active Users',
+      'analytics.dashboard.revenue': 'Revenue',
+      'analytics.dashboard.conversion-rate': 'Conversion Rate',
+      'analytics.dashboard.user-growth': 'User Growth',
+      'analytics.dashboard.revenue-trend': 'Revenue Trend',
+      'analytics.dashboard.chart-placeholder': 'Chart will be displayed here',
+      'analytics.dashboard.recent-activity': 'Recent Activity',
+
+      // Reports
+      'reports.title': 'Reports',
+      'reports.user-analytics': 'User Analytics',
+      'reports.user-analytics-desc': 'Detailed analysis of user behavior',
+      'reports.revenue-report': 'Revenue Report',
+      'reports.revenue-report-desc': 'Financial performance overview',
+      'reports.performance-report': 'Performance Report',
+      'reports.performance-report-desc': 'System and app performance metrics',
+      'reports.generate': 'Generate',
+      'reports.recent-reports': 'Recent Reports',
+      'reports.download': 'Download',
     },
     vi: {
       // Login
@@ -109,6 +163,60 @@ export class TranslationService {
       'dashboard.welcome-message': 'Chào Mừng Đến Với Bảng Điều Khiển',
       'dashboard.description':
         'Bạn đã đăng nhập thành công! Đây là trang được bảo vệ chỉ có thể truy cập bởi người dùng đã xác thực.',
+
+      // Profile
+      'profile.member-since': 'Thành viên từ',
+      'profile.personal-info': 'Thông Tin Cá Nhân',
+      'profile.first-name': 'Tên',
+      'profile.last-name': 'Họ',
+      'profile.email': 'Email',
+      'profile.user-id': 'ID Người Dùng',
+      'profile.account-actions': 'Hành Động Tài Khoản',
+      'profile.edit-profile': 'Chỉnh Sửa Hồ Sơ',
+      'profile.change-password': 'Đổi Mật Khẩu',
+
+      // Settings
+      'settings.title': 'Cài Đặt',
+      'settings.personal-info': 'Thông Tin Cá Nhân',
+      'settings.first-name': 'Tên',
+      'settings.first-name-placeholder': 'Nhập tên của bạn',
+      'settings.last-name': 'Họ',
+      'settings.last-name-placeholder': 'Nhập họ của bạn',
+      'settings.email': 'Email',
+      'settings.email-placeholder': 'Nhập email của bạn',
+      'settings.language-preferences': 'Tùy Chọn Ngôn Ngữ',
+      'settings.language': 'Ngôn Ngữ',
+      'settings.account-actions': 'Hành Động Tài Khoản',
+      'settings.change-password': 'Đổi Mật Khẩu',
+      'settings.export-data': 'Xuất Dữ Liệu',
+      'settings.delete-account': 'Xóa Tài Khoản',
+      'settings.saving': 'Đang lưu...',
+      'settings.save-changes': 'Lưu Thay Đổi',
+
+      // Analytics
+      'analytics.dashboard.title': 'Bảng Điều Khiển Phân Tích',
+      'analytics.dashboard.last-updated': 'Cập nhật cuối',
+      'analytics.dashboard.refresh': 'Làm mới',
+      'analytics.dashboard.total-users': 'Tổng Người Dùng',
+      'analytics.dashboard.active-users': 'Người Dùng Hoạt Động',
+      'analytics.dashboard.revenue': 'Doanh Thu',
+      'analytics.dashboard.conversion-rate': 'Tỷ Lệ Chuyển Đổi',
+      'analytics.dashboard.user-growth': 'Tăng Trưởng Người Dùng',
+      'analytics.dashboard.revenue-trend': 'Xu Hướng Doanh Thu',
+      'analytics.dashboard.chart-placeholder': 'Biểu đồ sẽ hiển thị tại đây',
+      'analytics.dashboard.recent-activity': 'Hoạt Động Gần Đây',
+
+      // Reports
+      'reports.title': 'Báo Cáo',
+      'reports.user-analytics': 'Phân Tích Người Dùng',
+      'reports.user-analytics-desc': 'Phân tích chi tiết hành vi người dùng',
+      'reports.revenue-report': 'Báo Cáo Doanh Thu',
+      'reports.revenue-report-desc': 'Tổng quan hiệu suất tài chính',
+      'reports.performance-report': 'Báo Cáo Hiệu Suất',
+      'reports.performance-report-desc': 'Số liệu hiệu suất hệ thống và ứng dụng',
+      'reports.generate': 'Tạo',
+      'reports.recent-reports': 'Báo Cáo Gần Đây',
+      'reports.download': 'Tải xuống',
     },
     ja: {
       // Login
@@ -150,6 +258,60 @@ export class TranslationService {
       'dashboard.welcome-message': 'ダッシュボードへようこそ',
       'dashboard.description':
         'ログインが成功しました！これは認証されたユーザーのみがアクセスできる保護されたルートです。',
+
+      // Profile
+      'profile.member-since': 'メンバー歴',
+      'profile.personal-info': '個人情報',
+      'profile.first-name': '名前',
+      'profile.last-name': '姓',
+      'profile.email': 'メール',
+      'profile.user-id': 'ユーザーID',
+      'profile.account-actions': 'アカウント操作',
+      'profile.edit-profile': 'プロフィール編集',
+      'profile.change-password': 'パスワード変更',
+
+      // Settings
+      'settings.title': '設定',
+      'settings.personal-info': '個人情報',
+      'settings.first-name': '名前',
+      'settings.first-name-placeholder': '名前を入力',
+      'settings.last-name': '姓',
+      'settings.last-name-placeholder': '姓を入力',
+      'settings.email': 'メール',
+      'settings.email-placeholder': 'メールを入力',
+      'settings.language-preferences': '言語設定',
+      'settings.language': '言語',
+      'settings.account-actions': 'アカウント操作',
+      'settings.change-password': 'パスワード変更',
+      'settings.export-data': 'データエクスポート',
+      'settings.delete-account': 'アカウント削除',
+      'settings.saving': '保存中...',
+      'settings.save-changes': '変更を保存',
+
+      // Analytics
+      'analytics.dashboard.title': '分析ダッシュボード',
+      'analytics.dashboard.last-updated': '最終更新',
+      'analytics.dashboard.refresh': '更新',
+      'analytics.dashboard.total-users': '総ユーザー数',
+      'analytics.dashboard.active-users': 'アクティブユーザー',
+      'analytics.dashboard.revenue': '収益',
+      'analytics.dashboard.conversion-rate': 'コンバージョン率',
+      'analytics.dashboard.user-growth': 'ユーザー成長',
+      'analytics.dashboard.revenue-trend': '収益トレンド',
+      'analytics.dashboard.chart-placeholder': 'ここにチャートが表示されます',
+      'analytics.dashboard.recent-activity': '最近のアクティビティ',
+
+      // Reports
+      'reports.title': 'レポート',
+      'reports.user-analytics': 'ユーザー分析',
+      'reports.user-analytics-desc': 'ユーザー行動の詳細分析',
+      'reports.revenue-report': '収益レポート',
+      'reports.revenue-report-desc': '財務パフォーマンス概要',
+      'reports.performance-report': 'パフォーマンスレポート',
+      'reports.performance-report-desc': 'システムとアプリのパフォーマンス指標',
+      'reports.generate': '生成',
+      'reports.recent-reports': '最近のレポート',
+      'reports.download': 'ダウンロード',
     },
     fr: {
       // Login
@@ -191,6 +353,60 @@ export class TranslationService {
       'dashboard.welcome-message': 'Bienvenue sur votre Tableau de Bord',
       'dashboard.description':
         'Vous vous êtes connecté avec succès! Ceci est une route protégée qui ne peut être accessible que par des utilisateurs authentifiés.',
+
+      // Profile
+      'profile.member-since': 'Membre depuis',
+      'profile.personal-info': 'Informations Personnelles',
+      'profile.first-name': 'Prénom',
+      'profile.last-name': 'Nom',
+      'profile.email': 'Email',
+      'profile.user-id': 'ID Utilisateur',
+      'profile.account-actions': 'Actions du Compte',
+      'profile.edit-profile': 'Modifier le Profil',
+      'profile.change-password': 'Changer le Mot de Passe',
+
+      // Settings
+      'settings.title': 'Paramètres',
+      'settings.personal-info': 'Informations Personnelles',
+      'settings.first-name': 'Prénom',
+      'settings.first-name-placeholder': 'Entrez votre prénom',
+      'settings.last-name': 'Nom',
+      'settings.last-name-placeholder': 'Entrez votre nom',
+      'settings.email': 'Email',
+      'settings.email-placeholder': 'Entrez votre email',
+      'settings.language-preferences': 'Préférences de Langue',
+      'settings.language': 'Langue',
+      'settings.account-actions': 'Actions du Compte',
+      'settings.change-password': 'Changer le Mot de Passe',
+      'settings.export-data': 'Exporter les Données',
+      'settings.delete-account': 'Supprimer le Compte',
+      'settings.saving': 'Sauvegarde...',
+      'settings.save-changes': 'Sauvegarder les Modifications',
+
+      // Analytics
+      'analytics.dashboard.title': 'Tableau de Bord Analytique',
+      'analytics.dashboard.last-updated': 'Dernière mise à jour',
+      'analytics.dashboard.refresh': 'Actualiser',
+      'analytics.dashboard.total-users': 'Utilisateurs Totaux',
+      'analytics.dashboard.active-users': 'Utilisateurs Actifs',
+      'analytics.dashboard.revenue': 'Revenus',
+      'analytics.dashboard.conversion-rate': 'Taux de Conversion',
+      'analytics.dashboard.user-growth': 'Croissance des Utilisateurs',
+      'analytics.dashboard.revenue-trend': 'Tendance des Revenus',
+      'analytics.dashboard.chart-placeholder': 'Le graphique sera affiché ici',
+      'analytics.dashboard.recent-activity': 'Activité Récente',
+
+      // Reports
+      'reports.title': 'Rapports',
+      'reports.user-analytics': 'Analyse des Utilisateurs',
+      'reports.user-analytics-desc': 'Analyse détaillée du comportement des utilisateurs',
+      'reports.revenue-report': 'Rapport de Revenus',
+      'reports.revenue-report-desc': "Vue d'ensemble des performances financières",
+      'reports.performance-report': 'Rapport de Performance',
+      'reports.performance-report-desc': 'Métriques de performance système et application',
+      'reports.generate': 'Générer',
+      'reports.recent-reports': 'Rapports Récents',
+      'reports.download': 'Télécharger',
     },
   };
 
