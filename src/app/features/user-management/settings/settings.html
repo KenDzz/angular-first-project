@@ -1,0 +1,125 @@
+<div class="min-h-screen bg-gray-50 py-8">
+  <div class="max-w-4xl mx-auto px-8">
+    <div class="bg-white rounded-2xl shadow-lg p-8">
+      <div class="flex justify-between items-center mb-8">
+        <h1 class="text-3xl font-bold text-gray-800">{{ 'settings.title' | translate }}</h1>
+        <app-language-switcher />
+      </div>
+
+      <form [formGroup]="settingsForm" (ngSubmit)="onSaveSettings()" class="space-y-8">
+        <!-- Personal Information Section -->
+        <div class="border-b border-gray-200 pb-8">
+          <h2 class="text-2xl font-semibold text-gray-800 mb-6">{{ 'settings.personal-info' | translate }}</h2>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <app-form-input
+              [label]="'settings.first-name' | translate"
+              type="text"
+              [placeholder]="'settings.first-name-placeholder' | translate"
+              [required]="true"
+              [error]="getFieldError('firstName')"
+              formControlName="firstName"
+            />
+
+            <app-form-input
+              [label]="'settings.last-name' | translate"
+              type="text"
+              [placeholder]="'settings.last-name-placeholder' | translate"
+              [required]="true"
+              [error]="getFieldError('lastName')"
+              formControlName="lastName"
+            />
+          </div>
+
+          <div class="mt-6">
+            <app-form-input
+              [label]="'settings.email' | translate"
+              type="email"
+              [placeholder]="'settings.email-placeholder' | translate"
+              [required]="true"
+              [error]="getFieldError('email')"
+              formControlName="email"
+            />
+          </div>
+        </div>
+
+        <!-- Language Preferences Section -->
+        <div class="border-b border-gray-200 pb-8">
+          <h2 class="text-2xl font-semibold text-gray-800 mb-6">{{ 'settings.language-preferences' | translate }}</h2>
+
+          <div class="space-y-4">
+            <label class="block text-sm font-semibold text-gray-700">
+              {{ 'settings.language' | translate }}
+            </label>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+              @for (language of languages; track language.code) {
+                <button
+                  type="button"
+                  (click)="onLanguageChange(language.code)"
+                  [class]="'flex items-center gap-3 p-4 border-2 rounded-lg transition-all duration-200 hover:shadow-md ' +
+                          (currentLanguage().code === language.code
+                            ? 'border-primary-500 bg-primary-50 shadow-md'
+                            : 'border-gray-200 bg-white hover:border-primary-300')"
+                >
+                  <span class="text-2xl">{{ language.flag }}</span>
+                  <div class="text-left">
+                    <div class="font-semibold text-gray-800 text-sm">{{ language.name }}</div>
+                    <div class="text-xs text-gray-600">{{ language.code.toUpperCase() }}</div>
+                  </div>
+                </button>
+              }
+            </div>
+          </div>
+        </div>
+
+        <!-- Account Actions Section -->
+        <div class="pb-8">
+          <h2 class="text-2xl font-semibold text-gray-800 mb-6">{{ 'settings.account-actions' | translate }}</h2>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <app-button
+              variant="outline"
+              size="md"
+              [fullWidth]="true"
+            >
+              <span>{{ 'settings.change-password' | translate }}</span>
+            </app-button>
+
+            <app-button
+              variant="outline"
+              size="md"
+              [fullWidth]="true"
+            >
+              <span>{{ 'settings.export-data' | translate }}</span>
+            </app-button>
+
+            <app-button
+              variant="danger"
+              size="md"
+              [fullWidth]="true"
+            >
+              <span>{{ 'settings.delete-account' | translate }}</span>
+            </app-button>
+          </div>
+        </div>
+
+        <!-- Save Button -->
+        <div class="flex justify-end pt-6 border-t border-gray-200">
+          <app-button
+            type="submit"
+            variant="primary"
+            size="lg"
+            [loading]="isSaving()"
+          >
+            @if (isSaving()) {
+              <span>{{ 'settings.saving' | translate }}</span>
+            } @else {
+              <span>{{ 'settings.save-changes' | translate }}</span>
+            }
+          </app-button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

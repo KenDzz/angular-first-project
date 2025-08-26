@@ -3,12 +3,12 @@ import { FormBuilder, FormGroup, Validators, ReactiveFormsModule } from '@angula
 import { Router, RouterLink } from '@angular/router';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 
-import { AuthService } from '../../../core/services/auth.service';
-import { AuthValidators } from '../../../core/validators/auth.validators';
-import { FormInputComponent } from '../../../shared/components/form-input/form-input';
-import { ButtonComponent } from '../../../shared/components/button/button';
-import { LanguageSwitcherComponent } from '../../../shared/components/language-switcher/language-switcher';
-import { TranslatePipe } from '../../../shared/pipes/translate.pipe';
+import { AuthService } from '../../services/auth-store';
+import { AuthValidators } from '../../validators/auth.validators';
+import { FormInputComponent } from '../../../../shared/components/form-input/form-input';
+import { ButtonComponent } from '../../../../shared/components/button/button';
+import { LanguageSwitcherComponent } from '../../../../shared/components/language-switcher/language-switcher';
+import { TranslatePipe } from '../../../../shared/pipes/translate.pipe';
 
 @Component({
   selector: 'app-register',

@@ -1,0 +1,105 @@
+<div class="min-h-screen bg-gray-50 py-8">
+  <div class="max-w-7xl mx-auto px-8">
+    <div class="flex justify-between items-center mb-8">
+      <h1 class="text-3xl font-bold text-gray-800">{{ 'analytics.dashboard.title' | translate }}</h1>
+      <div class="flex items-center gap-4">
+        <span class="text-sm text-gray-600">
+          {{ 'analytics.dashboard.last-updated' | translate }}: {{ lastUpdated() | date:'short' }}
+        </span>
+        <app-button
+          variant="outline"
+          size="sm"
+          (clickEvent)="onRefreshData()"
+        >
+          <span>{{ 'analytics.dashboard.refresh' | translate }}</span>
+        </app-button>
+      </div>
+    </div>
+
+    <!-- Analytics Cards -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+      <div class="bg-white rounded-2xl p-6 shadow-lg">
+        <div class="flex items-center justify-between mb-4">
+          <h3 class="text-lg font-semibold text-gray-800">{{ 'analytics.dashboard.total-users' | translate }}</h3>
+          <div class="text-3xl">👥</div>
+        </div>
+        <div class="text-3xl font-bold text-primary-600">{{ analyticsData().totalUsers | number }}</div>
+        <div class="text-sm text-green-600 mt-2">↗️ +12% from last month</div>
+      </div>
+
+      <div class="bg-white rounded-2xl p-6 shadow-lg">
+        <div class="flex items-center justify-between mb-4">
+          <h3 class="text-lg font-semibold text-gray-800">{{ 'analytics.dashboard.active-users' | translate }}</h3>
+          <div class="text-3xl">⚡</div>
+        </div>
+        <div class="text-3xl font-bold text-green-600">{{ analyticsData().activeUsers | number }}</div>
+        <div class="text-sm text-green-600 mt-2">↗️ +8% from last week</div>
+      </div>
+
+      <div class="bg-white rounded-2xl p-6 shadow-lg">
+        <div class="flex items-center justify-between mb-4">
+          <h3 class="text-lg font-semibold text-gray-800">{{ 'analytics.dashboard.revenue' | translate }}</h3>
+          <div class="text-3xl">💰</div>
+        </div>
+        <div class="text-3xl font-bold text-blue-600">${{ analyticsData().revenue | number }}</div>
+        <div class="text-sm text-green-600 mt-2">↗️ +15% from last month</div>
+      </div>
+
+      <div class="bg-white rounded-2xl p-6 shadow-lg">
+        <div class="flex items-center justify-between mb-4">
+          <h3 class="text-lg font-semibold text-gray-800">{{ 'analytics.dashboard.conversion-rate' | translate }}</h3>
+          <div class="text-3xl">📈</div>
+        </div>
+        <div class="text-3xl font-bold text-purple-600">{{ analyticsData().conversionRate }}%</div>
+        <div class="text-sm text-green-600 mt-2">↗️ +3% from last month</div>
+      </div>
+    </div>
+
+    <!-- Chart Section -->
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+      <div class="bg-white rounded-2xl p-6 shadow-lg">
+        <h2 class="text-xl font-bold text-gray-800 mb-6">{{ 'analytics.dashboard.user-growth' | translate }}</h2>
+        <div class="h-64 flex items-center justify-center bg-gray-50 rounded-lg">
+          <p class="text-gray-500">{{ 'analytics.dashboard.chart-placeholder' | translate }}</p>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-2xl p-6 shadow-lg">
+        <h2 class="text-xl font-bold text-gray-800 mb-6">{{ 'analytics.dashboard.revenue-trend' | translate }}</h2>
+        <div class="h-64 flex items-center justify-center bg-gray-50 rounded-lg">
+          <p class="text-gray-500">{{ 'analytics.dashboard.chart-placeholder' | translate }}</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Recent Activity -->
+    <div class="mt-8 bg-white rounded-2xl p-6 shadow-lg">
+      <h2 class="text-xl font-bold text-gray-800 mb-6">{{ 'analytics.dashboard.recent-activity' | translate }}</h2>
+      <div class="space-y-4">
+        <div class="flex items-center justify-between p-4 bg-gray-50 rounded-lg">
+          <div class="flex items-center gap-4">
+            <div class="w-2 h-2 bg-green-500 rounded-full"></div>
+            <span class="text-gray-800">New user registration spike detected</span>
+          </div>
+          <span class="text-sm text-gray-500">2 hours ago</span>
+        </div>
+
+        <div class="flex items-center justify-between p-4 bg-gray-50 rounded-lg">
+          <div class="flex items-center gap-4">
+            <div class="w-2 h-2 bg-blue-500 rounded-full"></div>
+            <span class="text-gray-800">Revenue milestone reached</span>
+          </div>
+          <span class="text-sm text-gray-500">5 hours ago</span>
+        </div>
+
+        <div class="flex items-center justify-between p-4 bg-gray-50 rounded-lg">
+          <div class="flex items-center gap-4">
+            <div class="w-2 h-2 bg-yellow-500 rounded-full"></div>
+            <span class="text-gray-800">Conversion rate optimization needed</span>
+          </div>
+          <span class="text-sm text-gray-500">1 day ago</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

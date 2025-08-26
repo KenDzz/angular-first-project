@@ -2,10 +2,10 @@ import { Component, ChangeDetectionStrategy, inject } from '@angular/core';
 import { Router } from '@angular/router';
 import { DatePipe } from '@angular/common';
 
-import { AuthService } from '../../core/services/auth.service';
-import { ButtonComponent } from '../../shared/components/button/button';
-import { LanguageSwitcherComponent } from '../../shared/components/language-switcher/language-switcher';
-import { TranslatePipe } from '../../shared/pipes/translate.pipe';
+import { AuthService } from '../../../core/auth/services/auth-store';
+import { ButtonComponent } from '../../../shared/components/button/button';
+import { LanguageSwitcherComponent } from '../../../shared/components/language-switcher/language-switcher';
+import { TranslatePipe } from '../../../shared/pipes/translate.pipe';
 
 @Component({
   selector: 'app-dashboard',

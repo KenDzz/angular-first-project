@@ -1,6 +1,6 @@
 import { Component, ChangeDetectionStrategy, input, output, computed } from '@angular/core';
 
-type ButtonVariant = 'primary' | 'secondary' | 'danger' | 'ghost';
+type ButtonVariant = 'primary' | 'secondary' | 'danger' | 'ghost' | 'outline';
 type ButtonSize = 'sm' | 'md' | 'lg';
 
 @Component({
@@ -57,6 +57,10 @@ export class ButtonComponent {
       case 'ghost':
         variantClasses =
           'bg-transparent border-gray-300 text-gray-700 hover:bg-gray-50 hover:border-gray-400 focus:ring-gray-200 disabled:opacity-50';
+        break;
+      case 'outline':
+        variantClasses =
+          'bg-transparent border-primary-500 text-primary-500 hover:bg-primary-500 hover:text-white focus:ring-primary-200 disabled:opacity-50';
         break;
     }
 
